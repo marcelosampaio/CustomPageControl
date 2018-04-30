@@ -42,10 +42,16 @@ class ViewController: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    /*
+     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+     pageControl.setProgress(contentOffsetX: scrollView.contentOffset.x, pageWidth: scrollView.bounds.width)
+     }
+     */
+    // or
+    /*
+     pageControl.currentPage = page
+    */
+    
 
 
 }
