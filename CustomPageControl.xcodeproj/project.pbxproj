@@ -12,9 +12,11 @@
 		701294FE20978E21008A4A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701294FC20978E21008A4A9A /* Main.storyboard */; };
 		7012950020978E29008A4A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701294FF20978E29008A4A9A /* Assets.xcassets */; };
 		7012950320978E29008A4A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7012950120978E29008A4A9A /* LaunchScreen.storyboard */; };
+		8AFC0F576871FB803EBBF737 /* Pods_CustomPageControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F6DE14053A3C41D10FEEA1 /* Pods_CustomPageControl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		571F055C76D5F4E176B16F34 /* Pods-CustomPageControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPageControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomPageControl/Pods-CustomPageControl.release.xcconfig"; sourceTree = "<group>"; };
 		701294F520978E21008A4A9A /* CustomPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		701294F820978E21008A4A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		701294FA20978E21008A4A9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		701294FF20978E29008A4A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7012950220978E29008A4A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7012950420978E29008A4A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F6DE14053A3C41D10FEEA1 /* Pods_CustomPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2A2B5FD9B0FBD7FE2EC1266 /* Pods-CustomPageControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPageControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomPageControl/Pods-CustomPageControl.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFC0F576871FB803EBBF737 /* Pods_CustomPageControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		364CB6BF2ABE8B63E5D3E377 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83F6DE14053A3C41D10FEEA1 /* Pods_CustomPageControl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		701294EC20978E21008A4A9A = {
 			isa = PBXGroup;
 			children = (
 				701294F720978E21008A4A9A /* CustomPageControl */,
 				701294F620978E21008A4A9A /* Products */,
+				968DE911AFFEED31B38D7CB4 /* Pods */,
+				364CB6BF2ABE8B63E5D3E377 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = CustomPageControl;
 			sourceTree = "<group>";
 		};
+		968DE911AFFEED31B38D7CB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2A2B5FD9B0FBD7FE2EC1266 /* Pods-CustomPageControl.debug.xcconfig */,
+				571F055C76D5F4E176B16F34 /* Pods-CustomPageControl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7012950720978E29008A4A9A /* Build configuration list for PBXNativeTarget "CustomPageControl" */;
 			buildPhases = (
+				D79C1EA40D9914DA64116FC5 /* [CP] Check Pods Manifest.lock */,
 				701294F120978E21008A4A9A /* Sources */,
 				701294F220978E21008A4A9A /* Frameworks */,
 				701294F320978E21008A4A9A /* Resources */,
+				4EB3BDEBA77C9C755D581FBF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EB3BDEBA77C9C755D581FBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CustomPageControl/Pods-CustomPageControl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FlexiblePageControl/FlexiblePageControl.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexiblePageControl.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomPageControl/Pods-CustomPageControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D79C1EA40D9914DA64116FC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomPageControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		701294F120978E21008A4A9A /* Sources */ = {
@@ -278,15 +343,13 @@
 		};
 		7012950820978E29008A4A9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2A2B5FD9B0FBD7FE2EC1266 /* Pods-CustomPageControl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V743F22FA8;
 				INFOPLIST_FILE = CustomPageControl/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plugapps.CustomPageControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +359,13 @@
 		};
 		7012950920978E29008A4A9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571F055C76D5F4E176B16F34 /* Pods-CustomPageControl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V743F22FA8;
 				INFOPLIST_FILE = CustomPageControl/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plugapps.CustomPageControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
