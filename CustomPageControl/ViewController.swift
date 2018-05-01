@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var flexiblePageControl: FlexiblePageControl!
     
-    
+    private var page = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +53,13 @@ class ViewController: UIViewController {
     */
     
 
+    // MAK: - UI Actions
+    @IBAction func addPage(_ sender: Any) {
+        flexiblePageControl.currentPage = page
+        page = page + 1
+    }
+    
+    
 
 }
 
